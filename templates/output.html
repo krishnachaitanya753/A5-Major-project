@@ -1,5 +1,17 @@
 <html>
     <body>
-        <h1>{{x}}</h1>
+        <ul>
+            <h2>Questions Generated:</h2>
+            {% for i in range(len) %}
+            <li> {{ x[i] }}  </li>
+            {% for j in y[i] %}
+            <h3>{{j}}</h3>
+            {% endfor %}
+            {% endfor %}
+            <h2>Options:</h2>
+            {% for i in z %}
+            <ol>{{i}}</ol>
+            {% endfor %}
+        </ul>
     </body>
 </html>

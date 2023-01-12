@@ -1,16 +1,66 @@
 <html>
-    <head>
-        <center><h1>Objective Type Question Generator</h1></center>
-    </head>
-    <body>
-        <h2>Enter the text here :</h2>
-        <form name = "passdata" action="." method="POST" enctype="multipart/form-data"> 
-            <textarea id = "para" name="paragraph" cols="85" rows="16">Type here</textarea>
-            <br>
+
+<head>
+    <style>
+        body {
+            background-color: powderblue;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+        }
+        p {
+            color: red;
+        }
+
+        #para{
+            border-radius: 15px;
+            padding: 20px;
+            background-color: aliceblue;
+            font-size: 14px;
+        }
+
+        .btn{
+            border-radius: 10px;
+            color: beige;
+            background-color: cadetblue;
+            width: 180px;
+            font-size: 16px;
+            padding: 6px;
+            margin: 20px 0px;
+            border: 2px solid #0f2949;
+            cursor: pointer;
+        }
+        .btn:hover{
+            
+            background-color: rgb(181, 207, 229);
+            width: 200px;
+            font-size: 16px;
+            padding: 6px;
+            margin: 20px 0px;
+            border: 2px solid #0f2949;
+            color: #0f2949;
+        }
+        h1{
+            color: #0f2949;
+        }
+
+        form{
+            font-size: 14px;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <h1>Objective Type Question Generator</h1>
+    <h2>Enter the text here :</h2>
+    <form name="passdata" action="." method="POST" enctype="multipart/form-data">
+        <textarea id="para" name="paragraph" cols="85" rows="16">Type here</textarea>
+        <br>
         <h2>Or</h2>
-            <label for="myfile">Select a file:</label>
-            <input type="file" name="myfile"><br>
-            <input type="submit">
-        </form> 
-    </body>
+        <label for="myfile">Select a file:</label>
+        <input type="file" name="myfile" ><br>
+        <input type="submit" class="btn">
+    </form>
+</body>
+
 </html>

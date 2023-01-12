@@ -12,7 +12,8 @@ def getvalue():
         f = request.files['myfile']
         data = f.read()
         f.close() 
-    return render_template('output.html',x=data)
+    a,b,c = main.ans(data)
+    return render_template('output.html',x=a,y=b,z=c,len = len(a))
 if __name__ == '__main__':
     app.debug =True
     app.run()
